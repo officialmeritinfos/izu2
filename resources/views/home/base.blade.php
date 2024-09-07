@@ -335,11 +335,13 @@
     </footer>
     <!-- Footer -->
 
-    <div class="telegram-float-widget">
-        <a href="https://wa.me/{{$web->phone}}" target="_blank">
-            <img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-256.png" alt="" width="50">
-        </a>
-    </div>
+    @if(!empty($web->phone))
+        <div class="telegram-float-widget">
+            <a href="https://wa.me/{{$web->phone}}" target="_blank">
+                <img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-256.png" alt="" width="50">
+            </a>
+        </div>
+    @endif
 
 </div>
 <!-- End PageWrapper -->
