@@ -30,7 +30,7 @@
             }
             .deal-top {
                 position: relative;
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
                 font-size: 16px;
                 text-transform: uppercase;
                 padding: 136px 24px 0;
@@ -42,7 +42,7 @@
                 bottom: -50px;
                 width: 0;
                 height: 0;
-                border-top: 50px solid rgb(18, 166, 202);
+                border-top: 50px solid rgb(194, 11, 11);
                 border-left: 175px solid transparent;
                 border-right: 183px solid transparent;
             }
@@ -66,7 +66,7 @@
                 display: inline-block;
                 font-size: 18px;
                 color: #fff;
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
                 padding: 8px 64px;
                 margin-top: 32px;
                 border-radius: 4px;
@@ -78,7 +78,7 @@
 
 
             .single-price:hover {
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
             }
             .single-price:hover .deal-top {
                 background: #262626;
@@ -99,7 +99,7 @@
                 left:20px;
                 padding:15px;
                 border-radius:40px;
-                background:rgb(18, 166, 202);
+                background:rgb(194, 11, 11);
             }
             .link-area a
             {
@@ -114,39 +114,38 @@
         </style>
     @endpush
 
+
     <!-- Main Slider -->
-    <section class="slider-two">
+    <section class="slider-one">
         <div class="single-item-carousel owl-carousel owl-theme">
 
             <!-- Slide -->
             <div class="slide">
-                <div class="slider-two_image-layer" style="background-image:url({{asset('home/images/main-slider/7.avif')}})"></div>
+                <div class="slider-one_image-layer" style="background-image:url({{asset('home/images/main-slider/1.jpg')}})"></div>
+                <div class="slider-one_pattern-layer" style="background-image:url({{asset('home/images/main-slider/pattern-1.png')}})"></div>
                 <div class="auto-container">
 
                     <!-- Content Column -->
-                    <div class="slider-two-content">
-                        <div class="slider-two_inner">
-                            <div class="slider-two_title">Our Advantage</div>
-                            <h1 class="slider-two_heading">We help investors solve <br> complex financial problems.</h1>
-                            <div class="slider-two_text">
+                    <div class="slider-one-content d-flex justify-content-end">
+                        <div class="slider-one_inner">
+                            <div class="slider-one_title">COACHING, CONSULTING, TRADING & INVESTING</div>
+                            <h1 class="slider-one_heading">We help investors solve <br> complex financial problems.</h1>
+                            <div class="slider-one_text">
                                 With our integration of a Robust AI model, we are able to solve <br/> complex financial needs
                                 of our users in minutes.
                             </div>
                             <!-- Button Box -->
-                            <div class="slider-two_button-box d-flex align-items-center flex-wrap">
-                                <a class="btn-style-three theme-btn clearfix" href="{{route('register')}}">
-                                    <span class="icon flaticon-user"></span>
+                            <div class="slider-one_button-box d-flex align-items-center flex-wrap">
+                                <a class="btn-style-one theme-btn btn-item" href="{{route('register')}}">
                                     <div class="btn-wrap">
                                         <span class="text-one">Get Started</span>
                                         <span class="text-two">Get Started</span>
                                     </div>
                                 </a>
-                                <a class="btn-style-four theme-btn" href="{{route('login')}}">
-                                    <span class="icon flaticon-cog"></span>
-                                    <div class="btn-wrap">
-                                        <span class="text-one">Login</span>
-                                        <span class="text-two">Login</span>
-                                    </div>
+                                <!-- About One Detail -->
+                                <a class="slider-one_play" href="{{route('login')}}">
+                                    <span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span>
+                                    Login
                                 </a>
                             </div>
                         </div>
@@ -157,33 +156,31 @@
 
             <!-- Slide -->
             <div class="slide">
-                <div class="slider-two_image-layer" style="background-image:url({{asset('home/images/main-slider/retired.avif')}})"></div>
+                <div class="slider-one_image-layer" style="background-image:url({{asset('home/images/main-slider/4.jpg')}})"></div>
+                <div class="slider-one_pattern-layer" style="background-image:url({{asset('home/images/main-slider/pattern-1.png')}})"></div>
                 <div class="auto-container">
 
                     <!-- Content Column -->
-                    <div class="slider-two-content">
-                        <div class="slider-two_inner">
-                            <div class="slider-two_title">Our Progression</div>
-                            <h1 class="slider-two_heading text-success">Grow your Finance <br> and prepare for Retirement</h1>
-                            <div class="slider-two_text">
+                    <div class="slider-one-content d-flex justify-content-end">
+                        <div class="slider-one_inner">
+                            <div class="slider-one_title">FINANCING, RETIREMENT, MINING</div>
+                            <h1 class="slider-one_heading">Grow your Finance <br> and prepare for Retirement</h1>
+                            <div class="slider-one_text">
                                 Retire in grand style with our investment plans crafted <br/>just for you to help you
                                 grow your wealth portfolio.
                             </div>
                             <!-- Button Box -->
-                            <div class="slider-two_button-box d-flex align-items-center flex-wrap">
-                                <a class="btn-style-three theme-btn clearfix" href="{{route('register')}}">
-                                    <span class="icon flaticon-user"></span>
+                            <div class="slider-one_button-box d-flex align-items-center flex-wrap">
+                                <a class="btn-style-one theme-btn btn-item" href="{{route('register')}}">
                                     <div class="btn-wrap">
                                         <span class="text-one">Get Started</span>
                                         <span class="text-two">Get Started</span>
                                     </div>
                                 </a>
-                                <a class="btn-style-four theme-btn" href="{{route('login')}}">
-                                    <span class="icon flaticon-cog"></span>
-                                    <div class="btn-wrap">
-                                        <span class="text-one">Login</span>
-                                        <span class="text-two">Login</span>
-                                    </div>
+                                <!-- About One Detail -->
+                                <a class="slider-one_play" href="{{route('login')}}">
+                                    <span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span>
+                                    Login
                                 </a>
                             </div>
                         </div>
@@ -191,6 +188,7 @@
 
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -340,68 +338,81 @@
     </section>
     <!-- End Feature Two -->
 
-    <!-- Business Two -->
-    <section class="business-two">
-        <div class="feature-two_circle-layer" style="background-image:url({{asset('home/images/background/pattern-8.png')}})"></div>
+    <!-- About One -->
+    <section class="about-one">
         <div class="auto-container">
-            <div class="row clearfix">
+            <div class="about-one-inner_container" style="background-image:url({{asset('home/images/background/pattern-1.png')}})">
+                <div class="row clearfix">
 
-                <!-- Blocks Column -->
-                <div class="feature-two_blocks-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="feature-two_blocks-inner">
+                    <!-- Content Column -->
+                    <div class="about-one_content-column col-lg-7 col-md-12 col-sm-12">
+                        <div class="about-one_content-inner">
+                            <!-- Sec Title -->
+                            <div class="sec-title">
+                                <div class="sec-title_title">About us</div>
+                                <h2 class="sec-title_heading">We help you to get freedom!</h2>
+                            </div>
+                            <div class="about-one_colored-text">
+                                With {{$siteName}}, harness the potential of
+                                artificial intelligence to elevate your cryptocurrency
+                                investments, mining operations, and trading
+                                endeavors to new
+                                heights. Experience x10 of revenue earning in hours.
+                            </div>
+                            <div class="about-one_text">
+                                An expert team in financial trading, investment, mining and medical alternatives offers
+                                the best financial solution for you.
+                            </div>
 
-                        <!-- Sec Title -->
-                        <div class="sec-title-two">
-                            <div class="sec-title-two_title alternate">We Are an In-time Agency </div>
-                            <h2 class="sec-title-two_heading">We are dedicated to give<br/>
-                                you the Best.</h2>
-                        </div>
-                        <div class="row clearfix">
-                            <!-- Businees Two Counter -->
-                            <div class="business-two_counter-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="business-two_counter"><span class="odometer" data-count="100"></span> +</div>
-                                <h6 class="business-two-branches">Expert Team</h6>
-                                <div class="business-two_counter-text">
-                                    With over 100+ ingenious experts and the power of a Super-model AI.
+                            <div class="row clearfix">
+
+                                <!-- Counter Boxed -->
+                                <div class="counter-boxed col-lg-6 col-md-6 col-sm-12">
+                                    <div class="d-flex align-items-center">
+                                        <div class="graph-outer">
+                                            <input type="text" class="dial" data-fgColor="#c20b0b" data-bgColor="#ffffff" data-width="110" data-height="110" data-linecap="normal"
+                                                   value="97" data-thickness="0.10">
+                                            <div class="inner-text count-box"><span class="count-text" data-stop="97" data-speed="3500"></span>%</div>
+                                        </div>
+                                        <div class="sub-title">Financial <br> strategic growth</div>
+                                    </div>
                                 </div>
+
+                                <!-- Counter Boxed -->
+                                <div class="counter-boxed col-lg-6 col-md-6 col-sm-12">
+                                    <div class="d-flex align-items-center">
+                                        <div class="graph-outer">
+                                            <input type="text" class="dial" data-fgColor="#c20b0b" data-bgColor="#ffffff" data-width="110" data-height="110"
+                                                   data-linecap="normal"  value="95" data-thickness="0.10">
+                                            <div class="inner-text count-box"><span class="count-text" data-stop="95" data-speed="3500"></span>%</div>
+                                        </div>
+                                        <div class="sub-title">Investment <br> valuable ideas</div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <!-- Businees Two Counter -->
-                            <div class="business-two_counter-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="business-two_counter"><span class="odometer" data-count="240"></span> M+</div>
-                                <h6 class="business-two-branches">Target fulfill</h6>
-                                <div class="business-two_counter-text">Our track record bears us witness that we have always kept to our words.</div>
-                            </div>
-                        </div>
 
-                        <div class="business-two_lower-text">
-                            With {{$siteName}}, harness the potential of
-                            artificial intelligence to elevate your cryptocurrency
-                            investments, mining operations, and trading
-                            endeavors to new
-                            heights. Experience x10 of revenue earning in hours.
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Video Column -->
-                <div class="feature-two_video-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="feature-two_video-inner">
-                        <span class="video-bg-color"></span>
-                        <!-- Video Box -->
-                        <div class="video-box">
-                            <figure class="video-image">
-                                <img class="transition-500ms" src="{{asset('home/images/resource/video-image.jpg')}}" alt="">
-                            </figure>
-                            <a href="https://www.youtube.com/watch?v=XV_s5U0fvdU" class="lightbox-video overlay-box"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a>
                         </div>
                     </div>
-                </div>
 
+                    <!-- Image Column -->
+                    <div class="about-one_image-column col-lg-5 col-md-12 col-sm-12">
+                        <div class="about-one_image-inner">
+                            <div class="about-one_counter-box" data-parallax='{"y" : 80}'>
+                                <div class="about-one_counter"><span class="odometer" data-count="7"></span><sup>+</sup></div>
+                                <div class="about-one_experiance">Years of <br> experiences</div>
+                            </div>
+                            <div class="about-one_image">
+                                <img src="{{asset('home/images/resource/about.jpg')}}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
-    <!-- End Business Two -->
+    <!-- End About One -->
 
     <!-- Business Three -->
     <section class="business-three">
@@ -414,24 +425,24 @@
             </div>
             <div class="feature-carousel owl-carousel owl-theme">
                 @foreach($services as $service)
-                <!-- Business Block One -->
-                <div class="business-block_one">
-                    <div class="business-block_one-inner">
-                        <div class="business-block_one-image">
-                            <img src="{{asset('home/serv/'.$service->photo)}}" alt="" />
-                            <div class="business-block_one-icon">
-                                <img src="{{asset('home/images/icons/business-1.png')}}" alt="" />
+                    <!-- Business Block One -->
+                    <div class="business-block_one">
+                        <div class="business-block_one-inner">
+                            <div class="business-block_one-image">
+                                <img src="{{asset('home/serv/'.$service->photo)}}" alt="" />
+                                <div class="business-block_one-icon">
+                                    <img src="{{asset('home/images/icons/business-1.png')}}" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="business-block_one-content">
-                            <h5 class="business-block_one-heading"><a href="{{route('service.details',['id'=>$service->id])}}">{{$service->title}}</a></h5>
-                            <div class="business-block_one-text">
-                                {{$service->short}}
+                            <div class="business-block_one-content">
+                                <h5 class="business-block_one-heading"><a href="{{route('service.details',['id'=>$service->id])}}">{{$service->title}}</a></h5>
+                                <div class="business-block_one-text">
+                                    {{$service->short}}
+                                </div>
+                                <a class="business-block_one-more" href="{{route('service.details',['id'=>$service->id])}}">Read more</a>
                             </div>
-                            <a class="business-block_one-more" href="{{route('service.details',['id'=>$service->id])}}">Read more</a>
                         </div>
                     </div>
-                </div>
                 @endforeach
 
 
@@ -611,7 +622,6 @@
                             <div class="deal-top">
                                 <h3>{{$package->name}}</h3>
                                 <h4> {{$package->roi}}%/ <span class="sup">{{$option->getReturnType($package->returnType)}}</span> </h4>
-                                <small class="text-white">{{$package->note}}</small>
                             </div>
                             <div class="deal-bottom">
                                 <ul class="deal-item">
@@ -836,5 +846,6 @@
         </div>
     </section>
     <!-- End CTA One -->
+
 
 @endsection

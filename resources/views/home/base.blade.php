@@ -10,7 +10,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{asset('home/images/'.$web->logo)}}">
@@ -65,6 +64,7 @@
         }
 
     </style>
+
 </head>
 
 <body>
@@ -72,9 +72,12 @@
 
 <div class="page-wrapper">
 
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!-- End Preloader -->
 
-    <!-- Main Header / Header Style Two -->
-    <header class="main-header header-style-two">
+    <!-- Main Header -->
+    <header class="main-header">
 
         <!-- Header Upper -->
         <div class="header-upper">
@@ -100,7 +103,7 @@
                         <!-- Info Box -->
                         <div class="upper-column info-box">
                             <div class="icon-box flaticon-pin"></div>
-                           {!! $web->address !!}
+                            {!! $web->address !!}
                         </div>
                     </div>
 
@@ -117,7 +120,7 @@
                     <div class="nav-outer d-flex justify-content-between align-items-center flex-wrap">
 
                         <!-- Main Menu -->
-                        <nav class="main-menu show navbar-expand-md d-flex align-items-center">
+                        <nav class="main-menu show navbar-expand-md">
                             <div class="navbar-header">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="icon-bar"></span>
@@ -169,6 +172,20 @@
                         </nav>
                         <!-- Main Menu End-->
 
+                        <div class="outer-box d-flex align-items-center">
+
+                            <!-- Button Box -->
+                            <div class="button-box">
+                                <a class="btn-style-one theme-btn btn-item" href="{{route('register')}}">
+                                    <div class="btn-wrap">
+                                        <span class="text-one">Get Started <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                        <span class="text-two">Get Started <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
                         <!-- Mobile Navigation Toggler -->
                         <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
@@ -192,25 +209,27 @@
                     <!-- Right Col -->
                     <div class="right-box d-flex align-items-center flex-wrap">
                         <!-- Main Menu -->
-                        <nav class="main-menu d-flex align-items-center">
+                        <nav class="main-menu">
                             <!--Keep This Empty / Menu will come through Javascript-->
                         </nav>
                         <!-- Main Menu End-->
 
                         <div class="outer-box d-flex align-items-center">
 
-                            <!-- Social Box -->
-                            <ul class="header-social_box style-two">
-                                <li><a href="https://www.twitter.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                                <li><a href="https://www.facebook.com/" class="fa-brands fa-twitter fa-fw"></a></li>
-                                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
-                                <li><a href="https://instagram.com/" class="fa-solid fa-instagram fa-fw"></a></li>
-                            </ul>
+                            <!-- Button Box -->
+                            <div class="button-box">
+                                <a class="btn-style-one theme-btn btn-item" href="{{route('register')}}">
+                                    <div class="btn-wrap">
+                                        <span class="text-one">Get Started<i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                        <span class="text-two">Get Started <i class="fa-solid fa-arrow-right fa-fw"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
                         </div>
-
-                        <!-- Mobile Navigation Toggler -->
-                        <div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
 
                     </div>
 
@@ -224,7 +243,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fas fa-window-close fa-fw"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" style="width: 100px;" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
@@ -236,7 +255,7 @@
     @yield('content')
 
     <!-- Footer -->
-    <footer class="main-footer style-two" style="background-image:url({{asset('home/images/background/pattern-11.png')}})">
+    <footer class="main-footer" style="background-image:url({{asset('home/images/background/pattern-6.png')}})">
         <div class="auto-container">
             <!-- Widgets Section -->
             <div class="widgets-section">
@@ -250,10 +269,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="{{url('/')}}">
-                                            <img src="{{asset('home/images/'.$web->logo)}}" alt=""
-                                                 style="width: 100px;"/>
-                                        </a>
+                                        <a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" alt="" /></a>
                                     </div>
                                     <div class="text">
                                         {{$siteName}} is a trailblazing company that leverages the power of AI to provide
@@ -263,58 +279,56 @@
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
+                            <!-- Big Column -->
+                            <div class="big-column col-lg-3 col-md-12 col-sm-12">
+                                <div class="row clearfix">
 
-                    <!-- Big Column -->
-                    <div class="big-column col-lg-3 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-
-                            <!-- Footer Column -->
-                            <div class="footer-column col-lg-12 col-md-12 col-sm-12">
-                                <div class="footer-widget contact-widget">
-                                    <h4>Official info:</h4>
-                                    <ul class="contact-list">
-                                        <li><span class="icon fa fa-phone"></span>
-                                            {{$web->address}}
-                                        </li>
-                                        <li><span class="icon fa fa-envelope"></span> {{$web->email}}</li>
-                                    </ul>
-                                    <div class="timing">
-                                        <strong>Open Hours: </strong>
-                                        Sun - Sat: 24/7
+                                    <!-- Footer Column -->
+                                    <div class="footer-column col-lg-12 col-md-12 col-sm-12">
+                                        <div class="footer-widget contact-widget">
+                                            <h4>Official info:</h4>
+                                            <ul class="contact-list">
+                                                <li><span class="icon fa fa-phone"></span>
+                                                    {{$web->address}}
+                                                </li>
+                                                <li><span class="icon fa fa-envelope"></span> {{$web->email}}</li>
+                                            </ul>
+                                            <div class="timing">
+                                                <strong>Open Hours: </strong>
+                                                Sun - Sat: 24/7
+                                            </div>
+                                        </div>
                                     </div>
+
+
+                                </div>
+                            </div>
+                            <div class="big-column col-lg-3 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+
+                                    <!-- Footer Column -->
+                                    <div class="footer-column col-lg-12 col-md-12 col-sm-12">
+                                        <div class="footer-widget contact-widget">
+                                            <h4>Certificate info:</h4>
+
+                                            <div class="timing">
+                                                <img src="{{asset('home/images/certificate.jpg')}}" style="width:150px;"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
 
-
                         </div>
                     </div>
-                    <div class="big-column col-lg-3 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-
-                            <!-- Footer Column -->
-                            <div class="footer-column col-lg-12 col-md-12 col-sm-12">
-                                <div class="footer-widget contact-widget">
-                                    <h4>Certificate info:</h4>
-
-                                    <div class="timing">
-                                        <img src="{{asset('home/images/certificate.jpg')}}" style="width:150px;"/>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
 
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <div class="copyright">2016 - {{date('Y')}} &copy; All rights reserved by <a href="{{url('/')}}">{{$siteName}}</a></div>
+                <div class="copyright">2015 - {{date('Y')}} &copy; All rights reserved by <a href="{{url('/')}}">{{$siteName}}</a></div>
             </div>
 
         </div>
@@ -344,9 +358,15 @@
 <script src="{{asset('home/js/parallax-scroll.js')}}"></script>
 <script src="{{asset('home/js/parallax.min.js')}}"></script>
 <script src="{{asset('home/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('home/js/parallax-scroll.js')}}"></script>
 <script src="{{asset('home/js/tilt.jquery.min.js')}}"></script>
 <script src="{{asset('home/js/magnific-popup.min.js')}}"></script>
+
 <script src="{{asset('home/js/script.js')}}"></script>
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{{asset('home/js/respond.js')}}"></script><![endif]-->
+
 <!-- Google language start -->
 <style>
 
@@ -451,6 +471,5 @@
         run = setInterval(request, interval);
     }
 </script>
-
 </body>
 </html>

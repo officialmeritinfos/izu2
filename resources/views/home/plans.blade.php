@@ -30,7 +30,7 @@
             }
             .deal-top {
                 position: relative;
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
                 font-size: 16px;
                 text-transform: uppercase;
                 padding: 136px 24px 0;
@@ -42,7 +42,7 @@
                 bottom: -50px;
                 width: 0;
                 height: 0;
-                border-top: 50px solid rgb(18, 166, 202);
+                border-top: 50px solid rgb(194, 11, 11);
                 border-left: 175px solid transparent;
                 border-right: 183px solid transparent;
             }
@@ -66,7 +66,7 @@
                 display: inline-block;
                 font-size: 18px;
                 color: #fff;
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
                 padding: 8px 64px;
                 margin-top: 32px;
                 border-radius: 4px;
@@ -78,7 +78,7 @@
 
 
             .single-price:hover {
-                background: rgb(18, 166, 202);
+                background: rgb(194, 11, 11);
             }
             .single-price:hover .deal-top {
                 background: #262626;
@@ -99,7 +99,7 @@
                 left:20px;
                 padding:15px;
                 border-radius:40px;
-                background:rgb(18, 166, 202);
+                background:rgb(194, 11, 11);
             }
             .link-area a
             {
@@ -138,7 +138,6 @@
                             <div class="deal-top">
                                 <h3>{{$package->name}}</h3>
                                 <h4> {{$package->roi}}%/ <span class="sup">{{$option->getReturnType($package->returnType)}}</span> </h4>
-                                <small class="text-white">{{$package->note}}</small>
                             </div>
                             <div class="deal-bottom">
                                 <ul class="deal-item">
